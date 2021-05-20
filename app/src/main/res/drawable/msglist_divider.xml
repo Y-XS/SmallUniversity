@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset
+    android:drawable="@drawable/devider_msglist"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:insetLeft="48dp">
+
+</inset>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_color"
+    tools:context=".PublishActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white">
+
+        <ImageButton
+            android:id="@+id/btn_back_publish"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/ic_back"/>
+        <Button
+            android:id="@+id/btn_pub_publish"
+            android:layout_width="72dp"
+            android:layout_height="24dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_btn_publish"
+            android:layout_centerVertical="true"
+            android:text="发布"
+            android:textSize="14sp"
+            android:textColor="@color/btn_word_color"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="8dp"
+        android:background="@color/back_color"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:minHeight="400dp">
+        <RelativeLayout
+            android:id="@+id/part_userinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+            <ImageView
+                android:id="@+id/head_img_pub"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="2dp"
+                android:src="@mipmap/ic_launcher"/>
+            <TextView
+                android:id="@+id/publish_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/head_img_pub"
+                android:layout_centerVertical="true"
+                android:textSize="20sp"
+                android:text="用户名"/>
+
+        </RelativeLayout>
+        <EditText
+            android:id="@+id/part_edit"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@id/part_userinfo"
+            android:hint="在此输入..."
+            android:gravity="start"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:textCursorDrawable="@drawable/custom_cursor"
+            android:background="@android:color/transparent"/>
+
+        <GridView
+            android:id="@+id/pub_gv"
+            android:numColumns="3"
+            android:layout_width="match_parent"
+            android:layout_height="232dp"
+            android:layout_below="@+id/part_edit"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

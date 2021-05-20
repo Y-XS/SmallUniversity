@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/yellow">
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="360dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="32dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="160dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/register_layout_1"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="56dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="用户名:"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/register_username"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_edittext"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/register_layout_1"
+                android:id="@+id/register_layout_2"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="密码:"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/register_password"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:inputType="textPassword"
+                    android:background="@drawable/shape_edittext"
+                    android:drawableRight="@mipmap/ic_eye"
+                    android:paddingRight="8dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_below="@id/register_layout_2"
+                android:id="@+id/register_layout_3"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="确认密码:"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/register_password_2"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_edittext"
+                    android:inputType="textPassword"
+                    android:drawableRight="@mipmap/ic_eye"
+                    android:paddingRight="8dp"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/register_layout_3"
+                android:id="@+id/register_layout_4"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="学校:"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/register_school"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_edittext"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_below="@id/register_layout_4"
+                android:id="@+id/register_layout_5"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="8dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="手机号:"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/register_tel"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:hint="仅用做ID"
+                    android:inputType="number"
+                    android:background="@drawable/shape_edittext"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/button_register"
+                android:layout_width="160dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/shape_btn_login"
+                android:layout_marginBottom="32dp"
+                android:text="注册"
+                android:textColor="@color/btn_word_color"/>
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

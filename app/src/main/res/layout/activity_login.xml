@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="72dp"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/app_name"/>
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="240dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="48dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="220dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/top_login"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="32dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="账号:"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp" />
+                <EditText
+                    android:id="@+id/edit_username"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_edittext"
+                    android:hint="手机号"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottom_login"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/top_login"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginTop="16dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="密码:"
+                    android:gravity="center_vertical"
+                    android:textSize="14sp"/>
+                <EditText
+                    android:id="@+id/edit_password"
+                    android:layout_width="0dp"
+                    android:layout_height="32dp"
+                    android:layout_weight="3"
+                    android:background="@drawable/shape_edittext"
+                    android:drawableRight="@mipmap/ic_eye"
+                    android:paddingRight="8dp"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginHorizontal="32dp">
+
+                <Button
+                    android:id="@+id/btn_register"
+                    android:layout_width="88dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/shape_btn_login"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true"
+                    android:text="注册"
+                    android:textSize="14sp"
+                    android:textColor="@color/btn_word_color"/>
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="88dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/shape_btn_login"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:textColor="@color/btn_word_color"
+                    android:text="登录"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>

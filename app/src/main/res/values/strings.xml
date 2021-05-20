@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">小大学</string>
+    <string name="tab_parttime_name">选项</string>
+    <string name="tab_competition_name">选项</string>
+    <string name="tab_activity_name">选项</string>
+    <string name="tab_wall_name">选项</string>
+    <string name="tab_volunteer_name">选项</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment 1</string>
+</resources>

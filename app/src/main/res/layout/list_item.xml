@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:id="@+id/item_layout">
+
+    <RelativeLayout
+        android:id="@+id/item_part_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp">
+
+        <ImageView
+            android:id="@+id/head_img"
+            android:layout_marginLeft="2dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@color/tab_selected_item" />
+        <TextView
+            android:id="@+id/name"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/head_img"
+            android:textSize="18sp"
+            android:text="大标题"/>
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="12sp"
+            android:text="小标题"
+            android:layout_toRightOf="@id/head_img"
+            android:layout_below="@id/name"/>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/item_part_img"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/item_part_1"
+        android:adjustViewBounds="true"/>
+<!--    <GridView-->
+<!--        android:id="@+id/post_item_gv"-->
+<!--        android:numColumns="3"-->
+<!--        android:stretchMode="columnWidth"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="8dp"-->
+<!--        android:layout_marginRight="8dp"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:horizontalSpacing="8dp"-->
+<!--        android:verticalSpacing="8dp"/>-->
+
+    <TextView
+        android:id="@+id/item_part_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/item_part_img"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="this is text"/>
+
+</RelativeLayout>

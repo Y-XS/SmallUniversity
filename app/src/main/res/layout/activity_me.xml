@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/head_me"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/yellow">
+
+        <ImageButton
+            android:id="@+id/btn_back_me"
+            android:layout_width="56dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:background="@mipmap/ic_back"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/head_me"
+        android:background="@color/yellow">
+
+        <ImageView
+            android:id="@+id/me_userheadimg"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="50dp"
+            android:background="@color/black"/>
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_height="264dp"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="48dp"
+        app:cardCornerRadius="5dp"
+        android:layout_marginTop="220dp"
+        android:background="@color/back_color">
+
+        <TextView
+            android:id="@+id/me_username"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:text="用户名"
+            android:textSize="24sp"
+            android:textColor="@color/btn_word_color"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_marginTop="68dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn_1_me"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_button"
+                android:layout_marginHorizontal="8dp"
+                android:textColor="@color/btn_word_color"
+                android:layout_marginTop="8dp"
+                android:textSize="24sp"
+                android:typeface="serif"
+                android:text="我的帖子"
+                />
+<!--            <Button-->
+<!--                android:id="@+id/btn_2_me"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="48dp"-->
+<!--                android:background="@drawable/shape_button"-->
+<!--                android:layout_below="@+id/btn_1_me"-->
+<!--                android:layout_marginHorizontal="8dp"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:textSize="24sp"-->
+<!--                android:typeface="serif"-->
+<!--                android:textColor="@color/btn_word_color"-->
+<!--                android:text="选项2"-->
+<!--                />-->
+            <Button
+                android:id="@+id/me_btn_contact_us"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_button"
+                android:layout_above="@+id/logout"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="24dp"
+                android:textSize="24sp"
+                android:typeface="serif"
+                android:textColor="@color/btn_word_color"
+                android:text="联系我们"
+                />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/shape_button_logout"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="8dp"
+                android:layout_marginBottom="16dp"
+                android:text="注销"
+                android:textSize="24sp"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>
