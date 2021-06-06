@@ -68,7 +68,6 @@ public class HttpUtil {
     }
 
     public static void sendOkHttpRequest(String address, okhttp3.Callback callback) {
-//        OkHttpClient client = new OkHttpClient();
         OkHttpClient client = new OkHttpClient.Builder()
                 .connectTimeout(4000, TimeUnit.MILLISECONDS)
                 .readTimeout(4000, TimeUnit.MILLISECONDS)

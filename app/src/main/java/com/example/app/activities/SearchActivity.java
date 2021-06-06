@@ -177,6 +177,7 @@ public class SearchActivity extends BaseActivity implements AdapterView.OnItemSe
                 }
                 Log.d("TAG", "------------------------>>>>data: " + itemData.getName()+" "+itemData.getTime()+ " "+itemData.getId());
                 PostingItems.add(new PostingItem(itemData.getName(), itemData.getTitle(),itemData.getTime(), headImgUrl, imgUrls, itemData.getMsg(), visibility));
+                imgUrls.clear();
             }
             Log.d("TAG", "parseJSONWithGSON: " + data.get(0));
         }

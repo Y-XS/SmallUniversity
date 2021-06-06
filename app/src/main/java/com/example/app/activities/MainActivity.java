@@ -222,9 +222,9 @@ public class MainActivity extends BaseActivity {
                             table.setType(ChatTable.TYPE_SEND);
                             table.save();
                         } else {
-                            boolean a = LitePal.isExist(MainTable.class, "userId=? and anotherId=?", myId, userId);
+                            boolean isExist = LitePal.isExist(MainTable.class, "userId=? and anotherId=?", myId, userId);
                             int id = 0;
-                            if (!a) {
+                            if (!isExist) {
                                 id = LitePal.findLast(MainTable.class).getId() + 1;
                                 MainTable table = new MainTable();
                                 table.setId(id);

@@ -35,23 +35,18 @@ public class SocketUtil{
         socket.on("msg", onNewMsg);
         socket.connect();
     }
-
     public void online(String userId){
         socket.emit(FLAG_ONLINE,userId);
-        Log.d("socketutil", "online: -------------->"+userId);
     }
     public void sendMsg(String sname,String rname,String sid,String rid,String msg,String time){
-        Log.d("TAG", "sendMsg: ***************************");
         socket.emit(FLAG_MSG,sname,rname,sid,rid,msg,time);
     }
     public void logout(){
         socket.emit(FLAG_CLOSE);
-        Log.d("socketutil", "logout: ---------------");
     }
     public void clear(){
         socket.disconnect();
         socket.off("msg",onNewMsg);
-        Log.d("TAG", "clear: --------------------");
     }
 
 }
